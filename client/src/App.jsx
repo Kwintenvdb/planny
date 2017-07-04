@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ItemList from "./components/ItemList";
-import GuestList from "./components/GuestList";
+import GuestContainer from "./components/guests/GuestContainer";
 import "./bulma.css";
 
 let items = [
@@ -16,23 +16,12 @@ let items = [
 	}
 ];
 
-let guests = [
-	{
-		id: 0,
-		name: "Berry"
-	},
-	{
-		id: 1,
-		name: "Pretzi"
-	}
-];
-
 class App extends Component {
 	render() {
 		return (
 			<div>
 				<ItemList items={items} />
-				<GuestList guests={guests} />
+				<GuestContainer />
 			</div>
 		);
 	}
